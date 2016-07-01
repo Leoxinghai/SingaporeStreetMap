@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+    <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+    <streetdirectory.mobile.gis.maps.MapView android:id="@id/MapView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_line" />
+    <RelativeLayout android:id="@id/layout_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/layout_menubar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <Button android:id="@id/button_back" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+            <TextView android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dummy_direction_list_title" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/SDTitleBar" />
+            <Button android:id="@id/button_more_routes" android:layout_width="wrap_content" android:text="@string/direction_more_routes_button_text" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDBackButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_desc" android:background="#aaf5f5f5" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_below="@id/layout_menubar">
+            <ImageView android:id="@id/imageViewPrev" android:padding="4.0dip" android:clickable="true" android:layout_width="32.0dip" android:layout_height="fill_parent" android:src="@drawable/selector_button_direction_prev" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageViewNext" android:padding="4.0dip" android:clickable="true" android:layout_width="32.0dip" android:layout_height="fill_parent" android:src="@drawable/selector_button_direction_next" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageViewIcon" android:padding="2.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_ewl" android:layout_toRightOf="@id/imageViewPrev" android:layout_centerVertical="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/textViewDesc" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Board the train towrds Pasir Ris 10 Stops later alight at paya Lebar EW8  CC9" android:layout_toLeftOf="@id/imageViewNext" android:layout_toRightOf="@id/imageViewIcon" />
+        </RelativeLayout>
+        <View android:id="@id/viewBar" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/layout_desc" />
+        <ImageView android:id="@id/ImageViewHideNavBar" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/button_hide_navbar" android:scaleType="fitStart" android:layout_below="@id/viewBar" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_alternative_routes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list_view_alternative_routes" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:orientation="vertical" android:background="@drawable/shape_gradient_shadow_bottom" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    </LinearLayout>
+</RelativeLayout>

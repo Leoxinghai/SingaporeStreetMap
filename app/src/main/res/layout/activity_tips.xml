@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tips_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/ShareButton" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDShareButton" />
+    </RelativeLayout>
+    <ListView android:id="@id/listView1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

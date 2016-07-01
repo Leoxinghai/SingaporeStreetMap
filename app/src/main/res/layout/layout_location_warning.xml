@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layoutNotif" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/buttonGPSSwitch" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/textViewNotifTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS is off." android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/textViewNotifDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Turn on for more accurate position?" android:layout_below="@id/textViewNotifTitle" />
+        <CheckBox android:id="@id/checkBoxDontShow" android:background="@android:color/transparent" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="2.0dip" android:button="@drawable/selector_checkbox" android:layout_below="@id/textViewNotifDesc" />
+        <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/textViewDontShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:text="Don't show this again" android:layout_toRightOf="@id/checkBoxDontShow" android:layout_below="@id/textViewNotifDesc" />
+    </RelativeLayout>
+    <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/buttonGPSSwitch" android:background="@drawable/selector_button_gps_on" android:layout_width="54.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="On" android:layout_toLeftOf="@id/buttonClose" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/buttonClose" android:background="#cccc0000" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_notif_close" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

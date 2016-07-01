@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="7">
+<data>
+<mid>163</mid>
+<cn>Building &amp; Construction</cn>
+<t>2</t>
+<tbiz>23</tbiz>
+</data>
+<data>
+<mid>206</mid>
+<cn>Commercial Equipment and Supplies</cn>
+<cns>Commercial Equipment</cns>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>186</mid>
+<cn>Industrial Equipment and Supplies</cn>
+<cns>Industrial Equipment</cns>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>286</mid>
+<cn>Life Sciences and Professional Services</cn>
+<cns>Life Sciences</cns>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>246</mid>
+<cn>Marine &amp; Chemicals</cn>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>226</mid>
+<cn>Mechanical &amp; Electrical</cn>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>266</mid>
+<cn>Transport &amp; Logistics</cn>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+</dataset>

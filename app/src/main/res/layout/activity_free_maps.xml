@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/free_maps_title" style="@style/SDTitleBar" />
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:background="#ffced4e0" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/frame_image" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_title" style="@style/FreeMapsTitleLabel" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_description" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="223.0dip" android:layout_height="103.0dip" android:src="@drawable/img_freemaps" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_how_title" style="@style/FreeMapsTitleLabel" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_map_how_a" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_a_link" style="@style/FreeMapsLinkLabel" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_how_b" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_b_link" style="@style/FreeMapsLinkLabel" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_how_c" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_c_link" style="@style/FreeMapsLinkLabel" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_usage" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_maps_usage_link" style="@style/FreeMapsLinkLabelNoPadding" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

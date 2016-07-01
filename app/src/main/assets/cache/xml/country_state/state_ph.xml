@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="8">
+<data>
+<stid>23</stid>
+<stnm>Maguindanao</stnm>
+</data>
+<data>
+<stid>39</stid>
+<stnm>Cavite</stnm>
+</data>
+<data>
+<stid>50</stid>
+<stnm>Agusan Del Sur</stnm>
+</data>
+<data>
+<stid>52</stid>
+<stnm>Surigao Del Norte</stnm>
+</data>
+<data>
+<stid>56</stid>
+<stnm>Bulacan</stnm>
+</data>
+<data>
+<stid>79</stid>
+<stnm>Pangasinan</stnm>
+</data>
+<data>
+<stid>84</stid>
+<stnm>Metro Manila</stnm>
+<df>1</df>
+</data>
+<data>
+<stid>999</stid>
+<stnm>Other</stnm>
+</data>
+</dataset>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layout_menubar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+                <TextView android:textSize="15.0sp" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settings_title" style="@style/SDTitleBar" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/imagebutton_menu" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+        </RelativeLayout>
+        <ExpandableListView android:id="@id/list_view_settings" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

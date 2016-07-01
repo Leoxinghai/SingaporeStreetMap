@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="5">
+<data>
+<mid>458</mid>
+<cn>Clinics &amp; Emergency</cn>
+<t>2</t>
+<tbiz>25</tbiz>
+</data>
+<data>
+<mid>478</mid>
+<cn>Ear, Nose and Throat</cn>
+<cns>Nose &amp; Throat</cns>
+<t>2</t>
+<tbiz>14</tbiz>
+</data>
+<data>
+<mid>492</mid>
+<cn>Medical Equipment and Supplies</cn>
+<cns>Medical Equipment</cns>
+<t>2</t>
+<tbiz>9</tbiz>
+</data>
+<data>
+<mid>446</mid>
+<cn>Medical Specialist and Surgery</cn>
+<cns>Medical Specialist</cns>
+<t>2</t>
+<tbiz>12</tbiz>
+</data>
+<data>
+<mid>503</mid>
+<cn>TCM &amp; Family Medical</cn>
+<t>2</t>
+<tbiz>15</tbiz>
+</data>
+</dataset>

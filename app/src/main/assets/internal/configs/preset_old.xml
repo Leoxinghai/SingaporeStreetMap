@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <map_sources>
+    <map_source name="JABODETABEK 2008" connection_type="RasterMapConnection" connection_string="http://vmap1.streetdirectory.com/map/id/jkt" off_connection_string="http://offmap.streetdirectory.com/map/id/jkt"/>
+    <map_source name="KV 2009" connection_type="RasterMapConnection" connection_string="http://vmap1.streetdirectory.com/map/my/kv" off_connection_string="http://offmap.streetdirectory.com/map/my/kv"/>
+    <map_source name="Singapore 2009" connection_type="RasterMapConnection" connection_string="http://vmap1.streetdirectory.com/map/sg" off_connection_string="http://offmap.streetdirectory.com/map/sg"/>
+    <map_source name="World 2011" connection_type="RasterMapConnection" connection_string="http://vmap1.streetdirectory.com/map/wrd" off_connection_string="http://offmap.streetdirectory.com/map/wrd"/>
+  </map_sources>
+  <presets preset_count="1">
+    <preset name="Raster Map">
+      <level name="Map level 1">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=1" scale_override="1"/>
+      </level>
+      <level name="Map level 2">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=2" scale_override="1"/>
+      </level>
+      <level name="Map level 3">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=3" scale_override="1"/>
+      </level>
+      <level name="Map level 4">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=4" scale_override="1"/>
+      </level>
+      <level name="Map level 5">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=5" scale_override="1"/>
+      </level>
+      <level name="Map level 6">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=6" scale_override="1"/>
+      </level>
+      <level name="Map level 7">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=7" scale_override="1"/>
+      </level>
+      <level name="Map level 8">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=8" scale_override="1"/>
+      </level>
+      <level name="Map level 9">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=9" scale_override="1"/>
+      </level>
+      <level name="Map level 10">
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=10" scale_override="1"/>
+      </level>
+      <level name="Map level 11">
+        <map name="Singapore 2009" connection_type="MapSource" connection_string="name=Singapore 2009;level=1" scale_override="1"/>
+        <map name="KV 2009" connection_type="MapSource" connection_string="name=KV 2009;level=1" scale_override="1"/>
+        <map name="JABODETABEK 2008" connection_type="MapSource" connection_string="name=JABODETABEK 2008;level=1" scale_override="1"/>
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=11" scale_override="1"/>
+      </level>
+      <level name="Map level 12">
+        <map name="Singapore 2009" connection_type="MapSource" connection_string="name=Singapore 2009;level=2" scale_override="1"/>
+        <map name="KV 2009" connection_type="MapSource" connection_string="name=KV 2009;level=2" scale_override="1"/>
+        <map name="JABODETABEK 2008" connection_type="MapSource" connection_string="name=JABODETABEK 2008;level=2" scale_override="1"/>
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=12" scale_override="1"/>
+      </level>
+      <level name="Map level 13">
+        <map name="Singapore 2009" connection_type="MapSource" connection_string="name=Singapore 2009;level=3" scale_override="1"/>
+        <map name="KV 2009" connection_type="MapSource" connection_string="name=KV 2009;level=3" scale_override="1"/>
+        <map name="JABODETABEK 2008" connection_type="MapSource" connection_string="name=JABODETABEK 2008;level=3" scale_override="1"/>
+        <map name="World 2011" connection_type="MapSource" connection_string="name=World 2011;level=13" scale_override="1"/>
+      </level>
+    </preset>
+  </presets>
+</config>

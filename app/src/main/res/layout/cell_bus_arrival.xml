@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:gravity="center" android:id="@id/text_view_bus_number" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/dummy_bus_stop_number" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:id="@id/text_view_next_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_next_bus_text" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:id="@id/text_view_subsequent_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_subsequent_bus_text" />
+    </LinearLayout>
+    <ImageView android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cell_arrow" android:contentDescription="@string/cell_arrow" />
+</LinearLayout>

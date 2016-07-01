@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/free_website_title" style="@style/SDTitleBar" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="38.0sp" android:textStyle="bold" android:id="@id/text_view_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_call" />
+        <TextView android:textSize="38.0sp" android:textStyle="bold" android:textColor="#ff216e21" android:id="@id/text_view_phone_number" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_phone_number" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/text_view_to_get_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_to_get_text" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_webpage" android:contentDescription="@string/free_website_image_desc" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_hosting" android:drawableLeft="@drawable/ic_check_green" style="@style/FreeWebsiteCheckLabel" />
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_domain" android:drawableLeft="@drawable/ic_check_green" style="@style/FreeWebsiteCheckLabel" />
+    </LinearLayout>
+    <Button android:textColor="#ffffffff" android:id="@id/button_voucher" android:background="@drawable/button_rounded_blue" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="10.0dip" android:text="@string/free_website_voucher" style="?android:attr/buttonStyleSmall" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_to_get_text_caption_on" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_1" style="@style/FreeWebsiteToGetDetailLabel" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_website_2" style="@style/FreeWebsiteToGetDetailLabel" />
+    </LinearLayout>
+</LinearLayout>

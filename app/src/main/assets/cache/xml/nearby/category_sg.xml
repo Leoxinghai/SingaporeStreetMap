@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="28">
+<data>
+<cat>11</cat>
+<cn>MRT Station</cn>
+<ico>nc_l_12.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>15</cat>
+<cn>Food</cn>
+<ico>nc_b_21.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>39</cat>
+<cn>Halal Food</cn>
+<ico>nc_b_257.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>23</cat>
+<cn>Fast Food</cn>
+<ico>nc_b_239.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>17</cat>
+<cn>Cafe</cn>
+<ico>nc_b_233.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>8</cat>
+<cn>Taxi Stand</cn>
+<ico>nc_l_8.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>1</cat>
+<cn>Parking Space</cn>
+<cns>Parking</cns>
+<ico>nc_l_1.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>2</cat>
+<cn>Petrol</cn>
+<ico>nc_l_2.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>16</cat>
+<cn>Hospital</cn>
+<ico>nc_b_230.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>20</cat>
+<cn>Clinic</cn>
+<ico>nc_b_236.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>40</cat>
+<cn>24 Hours Business</cn>
+<cns>Business</cns>
+<ico>nc_b_258.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>32</cat>
+<cn>Home Care</cn>
+<ico>nc_b_249.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>25</cat>
+<cn>Hotel</cn>
+<ico>nc_b_242.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>24</cat>
+<cn>Hair Salon</cn>
+<ico>nc_b_240.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>13</cat>
+<cn>Pub/Bar</cn>
+<ico>nc_b_232.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>14</cat>
+<cn>Spa/Beauty</cn>
+<ico>nc_b_19.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>36</cat>
+<cn>Lottery</cn>
+<ico>nc_b_254.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>37</cat>
+<cn>Supermarket</cn>
+<ico>nc_b_255.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>34</cat>
+<cn>School</cn>
+<ico>nc_b_252.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>26</cat>
+<cn>Kindergarten</cn>
+<ico>nc_b_243.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>18</cat>
+<cn>Child Care Centre</cn>
+<cns>Child Care</cns>
+<ico>nc_b_234.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>21</cat>
+<cn>Community Centre </cn>
+<ico>nc_b_237.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>28</cat>
+<cn>Money Changer</cn>
+<ico>nc_b_245.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>35</cat>
+<cn>Shopping Mall</cn>
+<ico>nc_b_253.png</ico>
+<t>2</t>
+</data>
+<data>
+<cat>5</cat>
+<cn>Police</cn>
+<ico>nc_l_5.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>6</cat>
+<cn>Post Office</cn>
+<ico>nc_l_6.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>4</cat>
+<cn>Park Connector</cn>
+<cns>Connector</cns>
+<ico>nc_l_4.png</ico>
+<t>1</t>
+</data>
+<data>
+<cat>3</cat>
+<cn>Parks</cn>
+<ico>nc_l_3.png</ico>
+<t>1</t>
+</data>
+</dataset>

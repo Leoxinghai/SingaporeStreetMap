@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/textViewHeaderTitle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bus_route_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/buttonRoutes" android:layout_width="wrap_content" android:text="@string/bus_route_button_route" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDBackButton" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/layoutHeader" android:background="@drawable/gradient_blue" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableLayout android:id="@id/tableLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imageButtonMap" android:layout_alignParentLeft="true">
+                    <TableRow android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff555555" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_route_from" />
+                        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff4f94ce" android:id="@id/textViewBusServices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    </TableRow>
+                    <TableRow android:id="@id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff555555" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bus_route_to" />
+                        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff4f94ce" android:id="@id/textViewDirection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    </TableRow>
+                </TableLayout>
+                <ImageButton android:id="@id/imageButtonMap" android:background="@drawable/sd_btn" android:padding="5.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_world_black" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="@string/bus_route_title" />
+            </RelativeLayout>
+            <View android:background="#ff555555" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <FrameLayout android:id="@id/frameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sdmob_banner_height" />
+                <RelativeLayout android:layout_gravity="bottom" android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" />
+                <View android:layout_gravity="bottom" android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/sdmob_banner_height" />
+                <FrameLayout android:id="@id/layoutLoading" android:background="#c9c9c9c9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/layoutAlternateRoutes" android:background="#9c9c9c9c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listViewRoutes" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

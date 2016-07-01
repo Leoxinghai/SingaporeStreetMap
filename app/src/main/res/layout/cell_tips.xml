@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/UserImage" android:src="@drawable/facebook_thumb" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/cell_tips_image_description" style="@style/TipsIconImage" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:id="@id/TitleLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_tips_cell_username" android:layout_toRightOf="@id/UserImage" android:layout_alignParentTop="true" style="@style/TipsTitleLabel" />
+    <TextView android:textSize="12.0sp" android:id="@id/DateLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_tips_cell_date" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/TipsDateLabel" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:id="@id/DetailLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_cell_tips_comment" android:layout_below="@id/TitleLabel" android:layout_alignLeft="@id/TitleLabel" style="@style/TipsDetailLabel" />
+    <Button android:textSize="10.0dip" android:textColor="@android:color/white" android:id="@id/button_reply_tips" android:background="@drawable/button_reply_tips" android:visibility="visible" android:layout_width="140.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:text="@string/tips_reply_button_default" android:layout_below="@id/DetailLabel" android:layout_alignParentRight="true" />
+</RelativeLayout>

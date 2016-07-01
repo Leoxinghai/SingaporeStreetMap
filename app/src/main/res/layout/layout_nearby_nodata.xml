@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/NearbyNoDataLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nearby_nodata_sorry_text" style="@style/NearbyNoDataSorryText" />
+    <TextView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nearby_nodata_notavailable_text" style="@style/NearbyNoDataNotAvailableText" />
+    <Button android:textSize="24.0sp" android:textStyle="bold" android:textColor="@drawable/selector_textview_bottom_banner_offer" android:gravity="center" android:id="@id/KmRangeButton" android:background="#ff36b5ff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="Show All Offers" android:layout_centerInParent="true" />
+</LinearLayout>

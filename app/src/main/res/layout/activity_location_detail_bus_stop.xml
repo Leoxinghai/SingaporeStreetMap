@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Bus Timing" style="@style/SDTitleBar" />
+        <Button android:id="@id/RefreshButton" android:layout_width="wrap_content" android:text="Refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDBackButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_header" android:background="@drawable/bitmap_pattern_location_business_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailHeaderLayout">
+        <ImageButton android:id="@id/button_business_photo" android:background="@drawable/selector_frame_image" android:src="@drawable/business_no_photo_square" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/business_detail_icon_button_description" style="@style/BusinessDetailIconButton" />
+        <TextView android:ellipsize="end" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_bus_stop_title_label" android:singleLine="true" android:layout_toRightOf="@id/button_business_photo" android:layout_alignTop="@id/button_business_photo" style="@style/BusinessDetailTitleLabel" />
+        <TextView android:ellipsize="end" android:id="@id/textview_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_bus_stop_detail_label" android:singleLine="true" android:layout_toRightOf="@id/button_business_photo" android:layout_below="@id/textview_title" style="@style/BusinessDetailDetailLabel" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/layout_header_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/button_business_photo" android:layout_below="@id/textview_detail" android:layout_alignBottom="@id/button_business_photo" style="@style/BusinessDetailHeaderButtonLayout">
+            <Button android:id="@id/button_direction" android:background="@drawable/selector_button_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_directions_button_label" style="@style/BusinessDetailFirstHeaderButton" />
+            <Button android:id="@id/button_map" android:background="@drawable/selector_button_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_map_button_label" style="@style/BusinessDetailHeaderButton" />
+            <Button android:id="@id/button_tips" android:background="@drawable/selector_button_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_tips_button_label" style="@style/BusinessDetailHeaderButton" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:contentDescription="@string/shadow_description" style="@style/BorderShadowBottom" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentTop="true" />
+        <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/view_sdmob" />
+        <ListView android:id="@id/list_view_bus_arrival" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutOffers" android:layout_below="@id/view_line" />
+        <ProgressBar android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

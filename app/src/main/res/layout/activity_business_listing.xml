@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+                <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+                <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/business_listing_title" style="@style/SDTitleBar" />
+                <Button android:id="@id/ShareButton" android:background="@drawable/selector_button_facebook_share" android:visibility="visible" android:layout_width="75.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:contentDescription="@string/shadow_description" style="@style/ShadowTop" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/CategoryButton" android:background="#ffeaeaea" android:padding="2.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_listing_category_button_label" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#ffeaeaea" android:paddingLeft="5.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@drawable/selector_color_button_green_label" android:id="@id/AllButton" android:background="@drawable/selector_button_green" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:text="@string/business_listing_all_button_label" android:layout_weight="1.0" />
+                <Button android:textColor="@drawable/selector_color_button_green_label" android:id="@id/NearbyButton" android:background="@drawable/selector_button_green" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/business_listing_nearby_button_label" android:layout_weight="1.0" />
+                <Button android:textColor="@drawable/selector_color_button_green_label" android:id="@id/MapButton" android:background="@drawable/selector_button_green_right" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/business_listing_map_button_label" android:layout_weight="0.8" />
+            </LinearLayout>
+            <ImageView android:layout_width="fill_parent" android:contentDescription="@string/shadow_description" style="@style/BorderShadowBottom" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+                <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+                <streetdirectory.mobile.gis.maps.MapView android:id="@id/MapView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_line" />
+                <ListView android:id="@id/ListView" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_line" />
+                <include android:id="@id/NoDataLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/view_sdmob" android:layout_centerVertical="true" layout="@layout/layout_nearby_nodata" />
+                <ProgressBar android:id="@id/LoadingIndicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/view_sdmob" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/side_menu_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/MenuButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

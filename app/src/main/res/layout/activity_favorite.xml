@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_menubar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <TextView android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/my_saves_title" style="@style/SDTitleBar" />
+            <Button android:id="@id/button_country" android:layout_width="wrap_content" android:text="@string/favorite_button_country" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDGrayButton" />
+            <ImageButton android:id="@id/MenuButton" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_box_button" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_menubar">
+            <include android:id="@id/layout_box_button_business" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" layout="@layout/layout_box_button" />
+            <include android:id="@id/layout_box_button_place" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" layout="@layout/layout_box_button" />
+            <include android:id="@id/layout_box_button_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" layout="@layout/layout_box_button" />
+            <include android:id="@id/layout_box_button_routes" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_box_button" />
+        </LinearLayout>
+        <ListView android:id="@id/list_view_favorite" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_favorite_tab" android:layout_below="@id/layout_box_button" />
+        <streetdirectory.mobile.gis.maps.MapView android:id="@id/MapView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_favorite_tab" android:layout_below="@id/layout_box_button" />
+        <include android:id="@id/layout_tutorial_favorites" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/layout_box_button" layout="@layout/layout_tutorial_like_business" />
+        <ProgressBar android:gravity="center" android:id="@id/progress_bar_favorites" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_favorite_tab" android:background="@android:color/white" android:paddingLeft="4.0dip" android:paddingTop="6.0dip" android:paddingRight="4.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_alignParentBottom="true">
+            <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_all" android:background="@drawable/selector_button_green" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="@string/favorite_all_button" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_favorite_tab_nearby_map" android:background="@android:color/white" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="2.0">
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_nearby" android:background="@drawable/selector_button_green_left" android:layout_width="0.0dip" android:layout_height="32.0dip" android:text="@string/favorite_nearby_button" android:layout_weight="1.0" />
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_map" android:background="@drawable/selector_button_green_right" android:layout_width="0.0dip" android:layout_height="32.0dip" android:text="@string/favorite_map_button" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/layout_login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_menubar" layout="@layout/layout_favorites_login" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

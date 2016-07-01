@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:background="@drawable/shape_gray_gradient" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewLogo" android:layout_width="68.0dip" android:layout_height="48.0dip" android:src="@drawable/business_no_photo_square" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/buttonCall" android:layout_toRightOf="@id/imageViewLogo" android:layout_alignTop="@id/imageViewLogo" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff4f94ce" android:id="@id/textViewTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_bottom_banner_title" />
+        <TextView android:textStyle="bold" android:textColor="#ff555555" android:id="@id/textViewAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bottom_banner_click_for_more" android:layout_below="@id/textViewTitle" />
+    </RelativeLayout>
+    <Button android:id="@id/buttonCall" android:background="@drawable/ic_point_right_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

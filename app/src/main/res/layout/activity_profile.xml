@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/button_back" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/SDTitleBar" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileHeaderLayout">
+        <ImageButton android:id="@id/imagebutton_photo" android:background="@drawable/selector_frame_image" android:src="@drawable/facebook_thumb" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/business_detail_icon_button_description" style="@style/ProfilePhoto" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:ellipsize="end" android:id="@id/textview_profile_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_facebook_name" android:singleLine="true" android:layout_toRightOf="@id/imagebutton_photo" style="@style/ProfileName" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imagebutton_photo" android:layout_below="@id/textview_profile_name" style="@style/ProfileButtons">
+            <Button android:id="@id/button_add_friend" android:background="@drawable/selector_button_profile_add_friend" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="29.0dip" />
+            <Button android:id="@id/button_send_message" android:background="@drawable/selector_button_profile_send_message" android:visibility="gone" android:layout_width="132.0dip" android:layout_height="29.0dip" />
+            <ImageView android:id="@id/imageview_request_sent" android:background="@drawable/button_profile_request_sent" android:visibility="gone" android:layout_width="141.0dip" android:layout_height="29.0dip" android:contentDescription="@string/profile_request_sent_description" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_confirm_reject" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_confirm" android:background="@drawable/selector_button_profile_confirm" android:layout_width="83.0dip" android:layout_height="27.0dip" />
+                <Button android:id="@id/button_reject" android:background="@drawable/selector_button_profile_reject" android:layout_width="83.0dip" android:layout_height="27.0dip" android:layout_marginLeft="6.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_marginTop="4.0dip" android:layout_below="@id/imagebutton_photo" android:contentDescription="@string/shadow_description" style="@style/BorderShadowBottom" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:gravity="center_horizontal" android:id="@id/textview_no_information" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_add_friend_text" android:drawableTop="@drawable/ic_profile_no_information" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_profile" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textStyle="bold" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_friends_title" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_friend_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageButton android:id="@id/button_view_all" android:background="@drawable/selector_button_profile_item" android:src="@drawable/ic_profile_view_all" android:scaleType="fitXY" android:contentDescription="@string/profile_friends_image_description" style="@style/ProfileImageButtonItem" />
+                    <ImageButton android:id="@id/button_friend_locked" android:background="@drawable/selector_button_profile_item" android:visibility="gone" android:src="@drawable/ic_profile_friends_locked" android:scaleType="fitXY" android:contentDescription="@string/profile_friends_image_description" style="@style/ProfileImageButtonItem" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar android:id="@id/indicator_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

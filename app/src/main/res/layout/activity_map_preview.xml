@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_bar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/button_back" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/map_preview_title" style="@style/SDTitleBar" />
+    </RelativeLayout>
+    <streetdirectory.mobile.gis.maps.MapView android:id="@id/view_map" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_sdmob" android:layout_below="@id/layout_bar" />
+    <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+    <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/BackgroundLayout" android:background="#ffcccccc" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/shape_offer_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <streetdirectory.mobile.core.ui.FillRatioImageView android:id="@id/imageView_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:src="#ffeaeaea" />
+        <ImageView android:id="@id/imageViewPin" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_offer_pin" android:scaleType="fitCenter" android:layout_below="@id/imageView_offer" android:layout_alignRight="@id/imageView_offer" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff6d6d6d" android:id="@id/textViewDistance" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/imageView_offer" android:layout_alignRight="@id/imageView_offer" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff6d6d6d" android:ellipsize="end" android:id="@id/textViewPlaceName" android:paddingLeft="60.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/textViewDistance" android:layout_below="@id/imageView_offer" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff6d6d6d" android:id="@id/textViewCompany" android:paddingLeft="60.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/textViewDistance" android:layout_alignRight="@id/imageView_offer" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cell_business_finder" android:background="@drawable/selector_color_cell_business_finder_category" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:clickable="false" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@drawable/selector_color_cell_title_business_finder" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/imageView1" />
+</RelativeLayout>

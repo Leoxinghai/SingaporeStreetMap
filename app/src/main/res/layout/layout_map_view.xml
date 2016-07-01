@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <streetdirectory.mobile.gis.maps.MapViewCanvas android:id="@id/MapViewCanvas" android:background="#ffccffcc" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ConeImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_cone" android:layout_centerInParent="true" android:contentDescription="@string/map_cone_compass" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/MapLayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingBottom="@dimen/map_gps_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ToggleButton android:id="@id/FindMeButton" android:background="@drawable/selector_button_map_findme" android:layout_width="48.0dip" android:layout_height="48.0dip" android:lines="0" />
+        <Button android:id="@id/CompassButton" android:background="@drawable/map_findme_compass" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingBottom="@dimen/map_control_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/ZoomInButton" android:background="@null" android:padding="5.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/selector_button_map_zoom_in" android:scaleType="centerInside" />
+        <ImageButton android:id="@id/ZoomOutButton" android:background="@null" android:padding="5.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/selector_button_map_zoom_out" android:scaleType="centerInside" />
+    </LinearLayout>
+</merge>

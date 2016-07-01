@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff349934" android:id="@id/text_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+    <TextView android:textSize="16.0sp" android:id="@id/text_view_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Your Singapore Map is outdated. You can no longer to use It. Please update to the latest version." />
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <android.support.v7.widget.AppCompatButton android:textColor="#ff349934" android:id="@id/button_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="Exit" style="?android:attr/borderlessButtonStyle" />
+        <android.support.v7.widget.AppCompatButton android:textColor="#ff349934" android:id="@id/button_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Now" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

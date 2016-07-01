@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" style="@style/GridBusinessFinderItemLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/IconButton" android:background="@drawable/selector_frame_nearby_category" android:paddingLeft="4.0dip" android:paddingTop="0.0dip" android:paddingRight="4.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/nearby_category_image_description" />
+    <TextView android:textColor="@android:color/black" android:gravity="center_horizontal" android:id="@id/TitleLabel" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/IconButton" style="@style/GridBusinessFinderItemTitle" />
+</RelativeLayout>

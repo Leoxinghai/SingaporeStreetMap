@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/imagebutton_photo" android:background="@drawable/frame_image" android:src="@drawable/ic_tips_post" android:scaleType="fitXY" android:contentDescription="@string/no_reviews_photo_description" style="@style/NoReviewsPhoto" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imagebutton_photo" android:layout_centerVertical="true" style="@style/NoReviewsContent">
+        <TextView android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_reviews_title" style="@style/NoReviewsTitleLabel" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_reviews_detail" style="@style/NoReviewsDetailLabel" />
+    </LinearLayout>
+</RelativeLayout>

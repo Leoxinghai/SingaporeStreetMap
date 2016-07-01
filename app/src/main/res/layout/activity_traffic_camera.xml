@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/traffic_camera_title" style="@style/SDTitleBar" />
+            <Button android:id="@id/RefreshButton" android:layout_width="wrap_content" android:text="@string/refresh_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDGreenButton" />
+        </RelativeLayout>
+        <View android:id="@id/side_menu_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/MenuButton" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+        <Spinner android:id="@id/spinner_area" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_below="@id/MenuBar" android:layout_centerHorizontal="true" />
+        <View android:id="@id/view_line" android:background="#ffaeaeae" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/spinner_area" />
+        <WebView android:id="@id/web_view" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_line" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <TextView android:id="@id/textView_branch_list_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/business_detail_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/business_detail_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/ShareButton" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDShareButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_header" android:background="@drawable/bitmap_pattern_location_business_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailHeaderLayout">
+        <ImageButton android:id="@id/button_business_photo" android:background="@drawable/selector_frame_image" android:src="@drawable/business_no_photo_square" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/business_detail_icon_button_description" style="@style/BusinessDetailIconButton" />
+        <TextView android:ellipsize="end" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_detail_title_label" android:singleLine="true" android:layout_toRightOf="@id/button_business_photo" android:layout_alignTop="@id/button_business_photo" style="@style/BusinessDetailTitleLabel" />
+        <TextView android:ellipsize="end" android:id="@id/textview_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_detail_detail_label" android:singleLine="true" android:layout_toRightOf="@id/button_business_photo" android:layout_below="@id/textview_title" style="@style/BusinessDetailDetailLabel" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/button_business_photo" android:layout_below="@id/textview_detail" android:layout_alignBottom="@id/button_business_photo" style="@style/BusinessDetailHeaderButtonLayout">
+            <Button android:id="@id/button_direction" android:background="@drawable/selector_button_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_directions_button_label" style="@style/BusinessDetailFirstHeaderButton" />
+            <Button android:id="@id/button_map" android:background="@drawable/selector_button_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_map_button_label" style="@style/BusinessDetailHeaderButton" />
+            <Button android:id="@id/button_tips" android:background="@drawable/selector_button_gray_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_tips_button_label" style="@style/BusinessDetailHeaderButton" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_button_phone" android:background="@drawable/selector_button_location_business_phone" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_phone_button_label" android:layout_below="@id/button_business_photo" android:layout_alignLeft="@id/button_business_photo" android:layout_alignRight="@id/textview_title" style="@style/BusinessDetailPhoneButtonLayout">
+            <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone_yellow" android:contentDescription="@string/business_detail_phone_button_description" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_phone_button_description" style="@style/BusinessDetailPhoneLabel" />
+            <TextView android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/textview_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_detail_phone_number" style="@style/BusinessDetailPhoneLabel" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_below="@id/layout_button_phone" android:contentDescription="@string/shadow_description" style="@style/BorderShadowBottom" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+        <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+        <ScrollView android:id="@id/scrollView_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_line">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItemSimilarBusiness">
+                <include android:id="@id/layout_similar_business" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItemSimilarBusiness" layout="@layout/cell_similar_business" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_ad_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BusinessDetailContentItem">
+                    <TextView android:textSize="13.0sp" android:id="@id/textview_title_offers" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_offers_title" style="@style/BusinessDetailContentTitleNoPadding" />
+                    <WebView android:id="@id/webView_ad_label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/layout_site_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItem">
+                    <ImageView android:id="@id/imageview_site_banner" android:layout_width="218.0dip" android:layout_height="180.0dip" android:src="#ffeaeaea" android:layout_centerHorizontal="true" android:contentDescription="@string/business_detail_site_banner_description" />
+                    <TextView android:textColor="#ff0000ff" android:id="@id/textViewSeeOffer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/business_detail_see_offer" android:layout_below="@id/imageview_site_banner" android:layout_centerHorizontal="true" />
+                    <ProgressBar android:id="@id/progress_indicator_site_banner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_our_location" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_our_location_title" style="@style/BusinessDetailContentTitle" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imagebutton_our_location" android:layout_width="wrap_content" android:layout_height="155.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/business_detail_our_location_title" />
+                        <ProgressBar android:id="@id/progress_indicator_our_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <Button android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/buttonDirections" android:background="#cc505050" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:text="Get Directions" android:layout_alignRight="@id/imagebutton_our_location" android:layout_alignBottom="@id/imagebutton_our_location" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_branches" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_branches_title" style="@style/BusinessDetailContentTitle" />
+                    <Button android:gravity="left" android:id="@id/button_branch" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_detail_branches" style="@style/BusinessDetailLink" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_ad_operating_hours" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_ad_operating_hours_title" style="@style/BusinessDetailContentTitleNoPadding" />
+                    <WebView android:id="@id/webView_ad_operating_hours" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_ad_promotion" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_ad_promotion_title" style="@style/BusinessDetailContentTitleNoPadding" />
+                    <WebView android:id="@id/webView_ad_promotion" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_photos_title" style="@style/BusinessDetailContentTitleNoPadding" />
+                    <android.support.v4.view.ViewPager android:layout_gravity="center_horizontal" android:id="@id/viewpager_photo" android:layout_width="fill_parent" style="@style/PhotoThumbnailPager" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_about_us" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/BusinessDetailContentItem">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_about_us_title" style="@style/BusinessDetailContentTitle" />
+                    <WebView android:id="@id/webView_about_us" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_dealing_with" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItemSimilarBusiness">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_dealing_with_title" style="@style/BusinessDetailContentTitleNoReviews" />
+                    <streetdirectory.mobile.core.ui.ExpandableHeightGridView android:id="@id/grid_dealing_with" android:background="#ffffffff" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="6.0dip" android:verticalSpacing="6.0dip" android:stretchMode="columnWidth" android:numColumns="2" android:isScrollContainer="false" style="@style/BusinessDetailContentGridDealing" />
+                    <Button android:id="@id/button_show_more_dealing" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_show_more" style="@style/BusinessDetailShowMore" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_reviews" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItemSimilarBusiness">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_reviews_title" style="@style/BusinessDetailContentTitleNoReviews" />
+                    <include android:id="@id/layout_tips_cell" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/cell_tips" />
+                    <Button android:id="@id/button_more_reviews" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_business_detail_more_reviews" style="@style/BusinessDetailShowMore" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_no_reviews" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BusinessDetailContentItemSimilarBusiness">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/business_detail_reviews_title" style="@style/BusinessDetailContentTitleNoReviews" />
+                    <include android:id="@id/layout_post_reviews" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_no_reviews" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar android:id="@id/progress_indicator_business" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

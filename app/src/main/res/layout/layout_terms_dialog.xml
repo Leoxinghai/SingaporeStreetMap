@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_terms_dialog_background" android:background="#bb000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="45.0dip" android:layout_centerInParent="true">
+        <TextView android:gravity="center" android:id="@id/textView_terms_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/business_detail_offer_term_label" android:layout_alignParentTop="true" style="@style/BusinessDetailContentTitleNoPadding" />
+        <WebView android:id="@id/webView_terms_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:minHeight="150.0dip" android:layout_above="@id/button_ok_terms" android:layout_below="@id/textView_terms_title" />
+        <ProgressBar android:id="@id/progressBar_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <Button android:id="@id/button_ok_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/DialogPositiveButton" />
+    </RelativeLayout>
+</RelativeLayout>

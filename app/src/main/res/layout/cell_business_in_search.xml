@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view_business_profile" android:paddingRight="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_landmark" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/business_in_cell_search_img_desc" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/text_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_business_in_cell_title" android:layout_toRightOf="@id/image_view_business_profile" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text_view_detail1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_business_in_cell_detail_label" android:layout_toRightOf="@id/image_view_business_profile" android:layout_below="@id/text_view_title" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text_view_detail2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_business_in_cell_detail2_label" android:layout_toRightOf="@id/image_view_business_profile" android:layout_below="@id/text_view_detail1" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="4">
+<data>
+<stid>2</stid>
+<stnm>Hong Kong Island</stnm>
+<df>1</df>
+</data>
+<data>
+<stid>3</stid>
+<stnm>Kowloon</stnm>
+</data>
+<data>
+<stid>4</stid>
+<stnm>New Territories</stnm>
+</data>
+<data>
+<stid>999</stid>
+<stnm>Other</stnm>
+</data>
+</dataset>

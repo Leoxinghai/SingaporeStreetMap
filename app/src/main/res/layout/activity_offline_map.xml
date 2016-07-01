@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <Button android:id="@id/BackButton" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SDGreenButton" />
+            <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/offline_map_title" style="@style/SDTitleBar" />
+            <Button android:id="@id/RefreshButton" android:layout_width="wrap_content" android:text="@string/refresh_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDGreenButton" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/TryAgainLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/OfflineMapTryAgainLayout">
+            <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offline_map_try_again_label" style="@style/OfflineMapTryAgainLabel" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/TryAgainButton" android:background="@drawable/selector_button_gray" android:layout_width="wrap_content" android:text="@string/offline_map_try_again_button_label" style="@style/OfflineMapTryAgainButton" />
+        </LinearLayout>
+        <ExpandableListView android:id="@id/ListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/MenuBar" />
+        <ProgressBar android:id="@id/LoadingIndicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <View android:id="@id/side_menu_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/MenuButton" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:id="@id/textview_title_activities" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_activities_title" />
+    <Button android:textStyle="bold" android:textColor="#ff3399cc" android:id="@id/button_business" android:background="@drawable/selector_button_profile_item" android:text="@string/profile_activities_business" android:drawableTop="@drawable/ic_profile_like_locked" android:layout_below="@id/textview_title_activities" style="@style/ProfileButtonItem" />
+    <Button android:textStyle="bold" android:textColor="#ffcc9900" android:id="@id/button_places" android:background="@drawable/selector_button_profile_item" android:text="@string/profile_activities_places" android:layout_toRightOf="@id/button_business" android:layout_below="@id/textview_title_activities" style="@style/ProfileButtonItem" />
+    <Button android:textStyle="bold" android:textColor="#ffcc66cc" android:id="@id/button_tips" android:background="@drawable/selector_button_profile_item" android:text="@string/profile_activities_tips" android:layout_toRightOf="@id/button_places" android:layout_below="@id/textview_title_activities" style="@style/ProfileButtonItem" />
+    <Button android:textStyle="bold" android:textColor="#ff89c810" android:id="@id/button_routes" android:background="@drawable/selector_button_profile_item" android:text="@string/profile_activities_routes" android:layout_toRightOf="@id/button_tips" android:layout_below="@id/textview_title_activities" style="@style/ProfileButtonItem" />
+</RelativeLayout>

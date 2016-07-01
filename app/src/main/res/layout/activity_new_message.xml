@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_gray_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/LayoutTo" android:layout_alignBottom="@id/LayoutSubject" />
+    <View android:background="@drawable/shape_gradient_shadow_bottom" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_alignTop="@id/LayoutTo" />
+    <View android:id="@id/viewLine1" android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignBottom="@id/LayoutTo" />
+    <View android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/viewLine1" />
+    <WebView android:id="@id/webView1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/LayoutSubject" />
+    <View android:id="@id/viewLine2" android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/LayoutSubject" />
+    <RelativeLayout android:id="@id/LayoutMenuBar" android:background="@drawable/layer_menu_bar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:gravity="center" android:id="@id/TextViewMessage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/message_new_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/ButtonBack" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="@string/back_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SDBackButton" />
+        <Button android:id="@id/ButtonSend" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="@string/message_new_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDSendButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/LayoutTo" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/LayoutMenuBar">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/TextViewTo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:text="@string/message_new_to" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/TextViewTo">
+            <Button android:textSize="12.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:background="@drawable/button_gray_flat" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="Add Friend" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/LayoutSubject" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_below="@id/LayoutTo">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/TextViewSubject" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:text="@string/message_new_subject" />
+        <EditText android:textSize="12.0sp" android:gravity="center_vertical" android:background="@drawable/button_gray_rounded" android:layout_width="fill_parent" android:layout_height="32.0dip" android:text="no subject" android:layout_toRightOf="@id/TextViewSubject" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

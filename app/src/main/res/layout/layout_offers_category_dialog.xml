@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_dialog_dialog_background" android:background="#bb000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ff36b5ff" android:gravity="center" android:id="@id/textView_dialog_title" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Select Offers Category" />
+        <View android:id="@id/view_title_separator" android:background="#ff36b5ff" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/textView_dialog_title" />
+        <ListView android:id="@id/listView_offers_category" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_button_separator" android:layout_below="@id/view_title_separator" />
+        <ProgressBar android:id="@id/progressBar_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <View android:id="@id/view_button_separator" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/button_close_dialog" />
+        <Button android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/button_close_dialog" android:background="@drawable/selector_cell_offer_category" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Close" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

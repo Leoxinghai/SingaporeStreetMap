@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton android:id="@id/imagebutton_profile_item" android:background="@drawable/selector_button_profile_item" android:src="@drawable/facebook_thumb" android:scaleType="fitXY" android:contentDescription="@string/profile_friends_image_description" style="@style/ProfileImageButtonItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

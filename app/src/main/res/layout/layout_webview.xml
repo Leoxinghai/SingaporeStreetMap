@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/business_offers_title" android:layout_toRightOf="@id/BackButton" style="@style/SDTitleBar" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bottomBarVote" android:background="#ffdfdfdf" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="OFFER RATINGS" android:layout_weight="2.5" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+            <Button android:id="@id/buttonVoteUp" android:background="@drawable/selector_button_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewGoodOffer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="GOOD OFFER" android:layout_alignLeft="@id/buttonVoteUp" android:layout_alignRight="@id/buttonVoteUp" android:layout_alignBottom="@id/buttonVoteUp" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_above="@id/textViewGoodOffer">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_good" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewVoteUp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\ 0" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="2.5">
+            <Button android:id="@id/buttonVoteDown" android:background="@drawable/selector_button_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewLousyOffer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="LOUSY OFFER" android:layout_alignLeft="@id/buttonVoteDown" android:layout_alignRight="@id/buttonVoteDown" android:layout_alignBottom="@id/buttonVoteDown" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_above="@id/textViewLousyOffer">
+                <ImageView android:padding="1.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_bad" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textViewVoteDown" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\ 0" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="2.5">
+            <ImageButton android:id="@id/imageButtonCall" android:background="@drawable/selector_button_call_green" android:layout_width="74.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBarVote" android:layout_below="@id/MenuBar" />
+    <ProgressBar android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

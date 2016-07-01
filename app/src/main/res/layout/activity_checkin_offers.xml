@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_menubar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <ImageButton android:id="@id/imagebutton_menu" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+            <TextView android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/checkins_title" style="@style/SDTitleBar" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_header" android:background="@drawable/bitmap_pattern_location_business_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_menubar" style="@style/BusinessDetailHeaderLayout">
+            <TextView android:ellipsize="end" android:id="@id/textview_detail1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/textview_detail1" android:singleLine="true" style="@style/BusinessDetailDetailLabel" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/textview_detail2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/textview_detail2" android:singleLine="true" android:layout_below="@id/textview_detail1" style="@style/BusinessDetailDetailLabel" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_wrap_button" android:background="@drawable/bitmap_pattern_location_business_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textview_detail2" style="@style/BusinessDetailHeaderLayout">
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_nearby" android:background="@drawable/selector_button_green_left" android:layout_width="100.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:text="@string/nearby_button" android:layout_weight="1.0" />
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_map" android:background="@drawable/selector_button_green_right" android:layout_width="100.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" android:text="@string/map_button" android:layout_weight="1.0" />
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/button_all" android:background="@drawable/selector_button_green" android:layout_width="100.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/favorite_all_button" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_below="@id/layout_header" android:contentDescription="@string/shadow_description" style="@style/BorderShadowBottom" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

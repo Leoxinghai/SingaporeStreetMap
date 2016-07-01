@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <inset android:drawable="@drawable/bus_arrival_arrow_down" android:insetLeft="-1.0dip" android:insetRight="-1.0dip" android:insetTop="1.0dip" android:insetBottom="1.0dip" />
+    </item>
+    <item android:drawable="@drawable/bus_arrival_arrow_right" />
+</selector>

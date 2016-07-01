@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewOfflineMap" android:visibility="visible" android:layout_width="@dimen/sdmob_banner_height" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:src="@drawable/ic_launcher_square" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff36b5ff" android:gravity="center_vertical" android:id="@id/textViewOfflineMap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Download offline map to your Streetdirectory app" android:layout_toLeftOf="@id/imageViewsArrow" android:layout_toRightOf="@id/imageViewOfflineMap" />
+    <ImageView android:id="@id/imageViewsArrow" android:layout_width="10.0dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/offers_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

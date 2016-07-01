@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout1" android:clickable="true" android:layout_width="65.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/box_grey" android:background="@drawable/selector_box_button" android:padding="5.0dip" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@drawable/selector_color_button_gray_favorite" android:layout_gravity="center" android:id="@id/textViewCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_box_button_count" />
+        <TextView android:textSize="9.0sp" android:textColor="@drawable/selector_color_button_gray_favorite" android:layout_gravity="center" android:id="@id/textViewCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_box_button_category" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageViewArrow" android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_arrow_blue_down" android:layout_below="@id/box_grey" android:layout_alignLeft="@id/box_grey" android:layout_alignRight="@id/box_grey" android:layout_alignParentLeft="true" android:contentDescription="@string/box_button_image_desc" />
+</RelativeLayout>

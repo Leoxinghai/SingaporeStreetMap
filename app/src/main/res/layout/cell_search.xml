@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:id="@id/TitleLabel" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_cell_search_title" />
+    <TextView android:textSize="12.0dip" android:id="@id/DetailLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dummy_cell_search_address" android:layout_toLeftOf="@id/CategoryLabel" android:layout_below="@id/TitleLabel" />
+    <TextView android:textSize="12.0dip" android:id="@id/CategoryLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_cell_search_category" android:layout_alignBottom="@id/DetailLabel" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+            <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nearby_title" style="@style/SDTitleBar" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+        <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+        <RelativeLayout android:id="@id/LayoutHeader" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_above="@id/view_line" android:layout_below="@id/MenuBar">
+            <ImageView android:id="@id/imageCategory" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff1f791f" android:id="@id/categoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/imageCategory" android:layout_alignTop="@id/imageCategory" />
+            <RelativeLayout android:id="@id/layoutButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:layout_below="@id/categoryTitle">
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/CategoryButton" android:background="@drawable/selector_green_button" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/nearby_browse" style="?android:attr/buttonStyleSmall" />
+                <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_white_arrow_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <View android:id="@id/line" android:background="#ff1f791f" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/layoutButton" />
+            <RelativeLayout android:id="@id/LayoutListview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line">
+                <ListView android:id="@id/ListView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/NoDataLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/layout_nearby_nodata" />
+                <ProgressBar android:id="@id/LoadingIndicator" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/side_menu_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/MenuButton" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

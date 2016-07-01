@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="6">
+<data>
+<stid>1</stid>
+<stnm>Kuala Lumpur</stnm>
+<df>1</df>
+</data>
+<data>
+<stid>2</stid>
+<stnm>Selangor</stnm>
+</data>
+<data>
+<stid>7</stid>
+<stnm>Johor</stnm>
+</data>
+<data>
+<stid>10</stid>
+<stnm>Malacca</stnm>
+</data>
+<data>
+<stid>15</stid>
+<stnm>Penang</stnm>
+</data>
+<data>
+<stid>23</stid>
+<stnm>Perak</stnm>
+</data>
+</dataset>

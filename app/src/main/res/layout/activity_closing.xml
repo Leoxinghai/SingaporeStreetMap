@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe0f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="24.0sp" android:textColor="#ff010101" android:gravity="center" android:id="@id/text_view_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="You are leaving\nSingapore Map" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="50.0sp" android:id="@id/text_view_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="\ 1" android:layout_below="@id/text_view_message" android:layout_centerHorizontal="true" />
+        <android.support.v7.widget.AppCompatButton android:textColor="#ffffffff" android:id="@id/button_close" android:layout_width="160.0dip" android:layout_height="56.0dip" android:layout_marginTop="20.0dip" android:text="CLOSE NOW" android:layout_below="@id/text_view_second" android:layout_centerHorizontal="true" app:backgroundTint="#ff1f954d" />
+    </RelativeLayout>
+    <ImageView android:id="@id/SplashCloud" android:layout_width="fill_parent" android:layout_height="48.0dip" android:src="@drawable/splash_cloud" android:scaleType="fitXY" android:layout_above="@id/view_bottom" android:contentDescription="@string/splash_cloud_description" />
+    <View android:id="@id/view_bottom" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" style="@style/SDMenuBar">
+        <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+        <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dummy_message_detail_title" style="@style/SDTitleBar" />
+        <Button android:id="@id/button_prev" android:layout_width="wrap_content" android:text="@string/refresh_label" android:layout_toLeftOf="@id/button_next" android:layout_centerVertical="true" style="@style/SDGreenSmallButton" />
+        <Button android:id="@id/button_next" android:layout_width="wrap_content" android:text="@string/refresh_label" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SDGreenSmallButton" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_detail_from" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text_view_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_message_detail_sender" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text_view_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_message_detail_subject" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text_view_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_message_detail_date" />
+    </LinearLayout>
+    <WebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_delete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message_detail_delete_button" android:layout_weight="1.0" />
+        <Button android:id="@id/button_reply" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message_detail_reply_button" android:layout_weight="1.0" />
+        <Button android:id="@id/button_new" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/message_detail_new_button" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

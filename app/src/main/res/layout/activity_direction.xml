@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<streetdirectory.mobile.sd.SDMapSideMenuLayout android:id="@id/side_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/MenuBar" android:layout_width="fill_parent" android:layout_height="48.0dip" style="@style/SDMenuBar">
+            <Button android:id="@id/BackButton" android:layout_width="wrap_content" android:text="@string/back_label" android:layout_centerVertical="true" android:contentDescription="@string/start_menu_description" style="@style/SDBackButton" />
+            <TextView android:id="@id/TitleBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/direction_title" style="@style/SDTitleBar" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_header" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/MenuBar">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DirectionHeaderTopLayout">
+                <Button android:id="@id/ReverseButton" android:background="@drawable/selector_button_direction_reverse" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/direction_reverse_icon_description" style="@style/DirectionReverseButton" />
+                <ImageView android:id="@id/StartIcon" android:background="@drawable/direction_icon_start" android:layout_width="33.0dip" android:layout_height="34.0dip" android:contentDescription="@string/direction_start_icon_description" style="@style/DirectionStartIcon" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ReverseButton" android:layout_toRightOf="@id/StartIcon" android:layout_alignTop="@id/StartIcon" android:layout_alignBottom="@id/StartIcon">
+                    <streetdirectory.mobile.core.ui.AutoResizeTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff001485" android:gravity="center_vertical" android:id="@id/StartLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/direction_click_here_label" android:maxLines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff001485" android:id="@id/TapToChangeStartLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="Tap to change destination" />
+                </LinearLayout>
+                <ImageView android:id="@id/EndIcon" android:background="@drawable/direction_icon_end" android:layout_width="33.0dip" android:layout_height="34.0dip" android:layout_below="@id/StartIcon" android:contentDescription="@string/direction_end_icon_description" style="@style/DirectionEndIcon" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ReverseButton" android:layout_toRightOf="@id/EndIcon" android:layout_alignTop="@id/EndIcon" android:layout_alignBottom="@id/EndIcon">
+                    <streetdirectory.mobile.core.ui.AutoResizeTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff001485" android:gravity="center_vertical" android:id="@id/EndLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/direction_click_here_label" android:maxLines="1" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff001485" android:id="@id/TapToChangeEndLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="Tap to change destination" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="@drawable/layer_direction_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:contentDescription="@string/direction_line" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direction_leaving_at_label" style="@style/DirectionLeavingLabel" />
+                <TextView android:textStyle="bold" android:textColor="#ff001485" android:gravity="center_vertical" android:id="@id/TimeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_direction_time_label" style="@style/DirectionDateTimeButton" />
+                <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direction_on_label" style="@style/DirectionDateTimeLabel" />
+                <TextView android:textStyle="bold" android:textColor="#ff001485" android:gravity="center_vertical" android:id="@id/DateLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummy_direction_date_label" style="@style/DirectionDateTimeButton" />
+                <Button android:layout_gravity="center_vertical" android:id="@id/RefreshButton" android:background="@drawable/selector_button_direction_refresh" android:scaleType="centerInside" android:contentDescription="@string/direction_refresh_description" style="@style/DirectionRefreshButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/view_sdmob" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/sdmob_banner_height" android:layout_alignParentBottom="true" />
+        <View android:id="@id/view_line" android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/view_sdmob" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/LinearLayoutOverview" android:background="#ff555555" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_line" android:layout_below="@id/layout_header">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_weight="1.0">
+                <include android:id="@id/DriveLayout" android:background="@drawable/button_direction_top_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_direction_overview" />
+                <include android:id="@id/TaxiLayout" android:background="@drawable/selector_button_direction_top_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_direction_overview" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_weight="1.0">
+                <include android:id="@id/BusLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_direction_overview" />
+                <include android:id="@id/MRTLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/layout_direction_overview" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/side_menu_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/MenuButton" android:layout_width="wrap_content" android:layout_margin="6.0dip" android:contentDescription="@string/start_menu_description" style="@style/SDMenuButton" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/LinearLayoutOverview" android:layout_alignBottom="@id/LinearLayoutOverview">
+            <ProgressBar android:id="@id/indicator_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</streetdirectory.mobile.sd.SDMapSideMenuLayout>

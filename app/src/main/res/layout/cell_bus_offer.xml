@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/BackgroundLayout" android:background="#ffffffff" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <streetdirectory.mobile.core.ui.FillRatioImageView android:id="@id/imageView_offer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="#ffeaeaea" android:layout_below="@id/textViewTitle" />
+    <ProgressBar android:id="@id/progress_indicator_offer_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textViewDistance" android:background="#cc505050" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="28.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignTop="@id/imageView_offer" android:layout_alignRight="@id/imageView_offer" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff00aa00" android:id="@id/textViewTitle" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1x Offers Near You" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff6d6d6d" android:id="@id/textViewCompanyName" android:paddingTop="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="company" android:layout_below="@id/imageView_offer" android:layout_alignRight="@id/imageView_offer" />
+</RelativeLayout>

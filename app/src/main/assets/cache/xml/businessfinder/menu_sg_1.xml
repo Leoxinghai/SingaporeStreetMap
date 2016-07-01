@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="7">
+<data>
+<mid>1</mid>
+<cn>Beauty</cn>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>63</mid>
+<cn>Entertainment</cn>
+<t>2</t>
+<tbiz>19</tbiz>
+</data>
+<data>
+<mid>143</mid>
+<cn>Family</cn>
+<t>2</t>
+<tbiz>17</tbiz>
+</data>
+<data>
+<mid>41</mid>
+<cn>Home Services</cn>
+<cns>Services</cns>
+<t>2</t>
+<tbiz>22</tbiz>
+</data>
+<data>
+<mid>103</mid>
+<cn>Learning</cn>
+<t>2</t>
+<tbiz>18</tbiz>
+</data>
+<data>
+<mid>21</mid>
+<cn>Shopping</cn>
+<t>2</t>
+<tbiz>20</tbiz>
+</data>
+<data>
+<mid>83</mid>
+<cn>Travel and Sports</cn>
+<t>2</t>
+<tbiz>19</tbiz>
+</data>
+</dataset>

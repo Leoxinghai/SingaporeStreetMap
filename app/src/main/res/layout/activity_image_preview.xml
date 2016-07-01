@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffd7dce6" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/frame_preview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/TitleLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/CancelButton" android:layout_alignTop="@id/CancelButton" android:layout_alignBottom="@id/CancelButton" />
+        <Button android:id="@id/CancelButton" android:background="@drawable/selector_button_gray" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/image_preview_cancel" android:layout_alignParentRight="true" style="?android:attr/buttonStyleSmall" />
+        <ImageView android:id="@id/PreviewImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:scaleType="fitCenter" android:layout_below="@id/CancelButton" android:contentDescription="@string/image_preview_description" />
+    </RelativeLayout>
+</LinearLayout>

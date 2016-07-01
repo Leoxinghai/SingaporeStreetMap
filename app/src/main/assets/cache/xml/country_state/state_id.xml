@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset total="9">
+<data>
+<stid>1</stid>
+<stnm>Jakarta</stnm>
+<df>1</df>
+</data>
+<data>
+<stid>2</stid>
+<stnm>Bali</stnm>
+</data>
+<data>
+<stid>3</stid>
+<stnm>Jawa Barat</stnm>
+</data>
+<data>
+<stid>4</stid>
+<stnm>Jawa Timur</stnm>
+</data>
+<data>
+<stid>5</stid>
+<stnm>Banten</stnm>
+</data>
+<data>
+<stid>6</stid>
+<stnm>Jawa Tengah</stnm>
+</data>
+<data>
+<stid>13</stid>
+<stnm>Bandung</stnm>
+</data>
+<data>
+<stid>36</stid>
+<stnm>Surabaya</stnm>
+</data>
+<data>
+<stid>999</stid>
+<stnm>Other</stnm>
+</data>
+</dataset>
